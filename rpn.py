@@ -32,7 +32,7 @@ def calculate(myarg):
 def main():
     while True:
         result = calculate(input("rpn calc> "))
-	if (result == 'q'):
+        if (result == 'q'):
             break
         print("Result: ", result)
 
