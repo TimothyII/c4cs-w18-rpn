@@ -15,7 +15,7 @@ def calculate(myarg):
     for token in myarg.split():
         try:
             if (token == 'q'):
-		return 'q'
+                return 'q'
             token = int(token)
             stack.append(token)
         except ValueError:
@@ -33,7 +33,7 @@ def main():
     while True:
         result = calculate(input("rpn calc> "))
 	if (result == 'q'):
-		break
+            break
         print("Result: ", result)
 
 if __name__ == '__main__':
