@@ -14,8 +14,6 @@ def calculate(myarg):
     stack = list()
     for token in myarg.split():
         try:
-            if (token == 'q'):
-                return 'q'
             token = int(token)
             stack.append(token)
         except ValueError:
@@ -32,8 +30,6 @@ def calculate(myarg):
 def main():
     while True:
         result = calculate(input("rpn calc> "))
-        if (result == 'q'):
-            break
         print("Result: ", result)
 
 if __name__ == '__main__':
