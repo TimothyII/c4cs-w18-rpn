@@ -2,5 +2,4 @@ language: python
 python:
  - "3.5"
 script:
- - python rpn.py
- - "1 1 +"
+ - python rpn.py < rpn_input.txt
